@@ -17,6 +17,8 @@ def index():
 
 @app.route('/add', methods=['POST'])
 def add():
-    form_value = request.form["todo"]
+    title = request.form["todo"]
     todo = add_item(title)
+    return redirect('/')
     
+ 
