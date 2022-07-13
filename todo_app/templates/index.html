@@ -16,6 +16,13 @@
         <li>ID:{{item.id}} - {{ item.title }} - Status: {{ item.status }}</li>
         {% endfor %}
       </ul>
+      <h2>New Items</h2>
+      <form action="/add" method="POST">
+        <label for="todo">New To-Do Item:</label><br>
+        <input type="text" id="todo" name="todo"><br><br>
+        <input type="submit" value="Submit">
+      </form>
     </div>
   </div>
+  
 {% endblock %}
